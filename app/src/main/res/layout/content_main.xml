@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.google.sample.cloudvision.MainActivity"
+                tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/image_details"
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Use the floating action button to select an image."
+                android:layout_weight="0.67" />
+            <TextView
+                android:id="@+id/servings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Number of Servings:" />
+
+            <EditText
+                android:id="@+id/servings_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:ems="10"
+                android:text="1"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Calories:" />
+
+            <EditText
+                android:id="@+id/calories_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fat:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/fat_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/sat_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saturated Fat:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/sat_fat_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/trans_fat"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trans Fat:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/trans_fat_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/cholesterol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cholesterol:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/cholesterol_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/sodium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sodium:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/sodium_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/carbohydrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbohydrate:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/carbohydrate_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/fiber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiber:"
+                android:layout_weight="0.19" />
+
+            <EditText
+                android:id="@+id/fiber_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sugar:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/sugar_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/protein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein:"
+                android:layout_weight="0.19" />
+            <EditText
+                android:id="@+id/protein_number"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/main_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
